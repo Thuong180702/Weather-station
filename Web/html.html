@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Weather Station</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<header>
+        <div class="container">
+            <div class="logo-left">
+                <img src="img/logo BK.png" alt="Logo 1">
+            </div>
+            <div class="text">
+                <h1>DANANG UNIVERSITY OF SCIENCE AND TECHNOLOGY</h1>
+                <h2>DANANG UNIVERSITY</h2>
+                <h3>FACULTY OF MECHANICAL ENGINEERING</h3>
+            </div>
+            <div class="logo-right">
+                <img src="img/logo khoa CK.png" alt="Logo 2">
+            </div>
+        </div>
+    </header>
+
+	<main>
+		<div class="container1">
+			<div class="row">
+				<div class="grid-container">
+					<div class="grid-item temperature">
+						<h1 style="color: #dc3545;">TEMPERATURE</h1>
+						<h2 id="temperature" class="value"></h2>
+						<img id="temperature-image" src="img/temp.jpg" alt="Temperature">
+					</div>
+					<div class="grid-item humidity">
+						<h1 style="color: #dc3545;">HUMIDITY</h1>
+						<h2 id="humidity"></h2>
+						<img id="humidity-image" class="value" src="img/humi.png" alt="Humidity">
+					</div>
+					<div class="grid-item rain">
+						<h1 style="color: #dc3545;">STATE RAIN</h1>
+						<h2 id="rainfall" class="value"></h2>
+						<h2 id="change-state"></h2>
+						<img id="rain-image" src="img/rain.jpg" alt="Rain">
+					</div>
+					<div class="grid-item light">
+						<h1 style="color: #dc3545;">LIGHT</h1>
+						<h2 id="brightness"></h2>
+						<img id="light-image" src="img/light.png" alt="Light">
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="profile">
+			<p><Address>Mạng truyền thông công nghiệp</Address></p>
+			<p1>
+				<Address> Station Address: 54 Nguyễn Lương Bằng, Hoà Khánh Bắc, Liên Chiểu, TP. Đà Nẵng 16.0466°Đ -
+					108.2067°B </Address>
+			</p1>
+		</div>
+	</footer>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+<script src="app.js"></script>
+
+</html>
